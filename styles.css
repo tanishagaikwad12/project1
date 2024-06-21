@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#d67229;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 1.5cm;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+.logo img
+{
+    height: 2cm;
+    width: 4cm;
+}
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+hero h3 {
+    font-style: normal;
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1cm;
+    border-radius: 8px;
+    text-align: center;
+    width: 6.5cm;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 7cm;
+    background-color: #c5c6d0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card li{
+    text-align: left;
+    padding: 0.1cm;
+}
+
+.card .price-yearly {
+    display: none;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+/* footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+} */
+
+/* Toggle Switch Styles */
+.toggle input {
+    display: none;
+}
+
+.toggle label {
+    background-color: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 48px;
+}
+
+.toggle label::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: transform 0.3s;
+    width: 20px;
+}
+
+.toggle input:checked + label::after {
+    transform: translateX(24px);
+}
+
+.toggle input:checked + label {
+    background-color: #4CAF50;
+}
+.card ul{
+    list-style: none;
+}
+.card ul li::before{
+    content:'✔';
+    
+}
+p 
+{
+    font-weight: bold;
+    font-size: large;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #777;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* To make icons white */
+}
